@@ -26,6 +26,7 @@ requirements:
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
+    - r-hmisc >=4.4_2
     - r-presenceabsence >=1.1.9
     - r-ade4 >=1.6_2
     - r-adehabitathr >=0.4.11
@@ -54,6 +55,7 @@ requirements:
     - r-vegan >=2.4_1
   run:
     - r-base
+    - r-hmisc >=4.4_2
     - r-presenceabsence >=1.1.9
     - r-ade4 >=1.6_2
     - r-adehabitathr >=0.4.11
