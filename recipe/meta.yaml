@@ -1,4 +1,4 @@
-{% set version = "3.2.1" %}
+{% set version = "3.2.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ecospat_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ecospat/ecospat_{{ version }}.tar.gz
-  sha256: 972d98057485c3e5c886c671e15e9b9646d6ab3005132787a7e4fec1e33aa292
+  sha256: c5d769777b9b08247b1dd6eefe806c130ff4ec6772572981901768795854a26d
 
 build:
   merge_build_host: true  # [win]
@@ -19,6 +19,7 @@ build:
   rpaths:
     - lib/R/lib/
     - lib/
+
 
 requirements:
   build:
@@ -32,7 +33,7 @@ requirements:
     - r-adehabitathr >=0.4.11
     - r-adehabitatma >=0.3.8
     - r-ape >=3.2
-    - r-biomod2 >=3.1_64
+    - r-biomod2 <4.0
     - r-classint >=0.1_23
     - r-dismo >=0.9_3
     - r-doparallel >=1.0.10
@@ -61,7 +62,7 @@ requirements:
     - r-adehabitathr >=0.4.11
     - r-adehabitatma >=0.3.8
     - r-ape >=3.2
-    - r-biomod2 >=3.1_64
+    - r-biomod2 <4.0
     - r-classint >=0.1_23
     - r-dismo >=0.9_3
     - r-doparallel >=1.0.10
