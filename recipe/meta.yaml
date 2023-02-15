@@ -30,7 +30,7 @@ requirements:
     - r-ape >=3.2
     - r-adehabitathr >=0.4.11
     - r-adehabitatma >=0.3.8
-    - r-biomod2 >=4.1
+    - r-biomod2 >=4.2_2
     - r-classint >=0.1_23
     - r-dismo >=0.9_3
     - r-ecodist >=1.2.9
@@ -54,7 +54,7 @@ requirements:
     - r-ape >=3.2
     - r-adehabitathr >=0.4.11
     - r-adehabitatma >=0.3.8
-    - r-biomod2 >=4.1
+    - r-biomod2 >=4.2_2
     - r-classint >=0.1_23
     - r-dismo >=0.9_3
     - r-ecodist >=1.2.9
