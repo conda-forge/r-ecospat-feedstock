@@ -14,7 +14,7 @@ source:
 
 build:
   merge_build_host: true  # [win]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -93,5 +93,3 @@ extra:
   recipe-maintainers:
     - conda-forge/r
     - colineroyaux
-
-# Date/Publication: 2021-02-19 09:10:03 UTC
