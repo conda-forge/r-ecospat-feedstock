@@ -1,4 +1,4 @@
-{% set version = "3.5.1" %}
+{% set version = "4.0.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ecospat_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ecospat/ecospat_{{ version }}.tar.gz
-  sha256: 0b875c8463b62dca460ceaccabdbc2c1da524e125c1d459370243d48dfe57897
+  sha256: 68c07649898974287d902b25ade9763c5a3d2af899ea488aa9aa6070ba6f7954
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
