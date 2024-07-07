@@ -1,4 +1,4 @@
-{% set version = "4.1.0" %}
+{% set version = "4.1.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ecospat_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ecospat/ecospat_{{ version }}.tar.gz
-  sha256: 025c28b74762b7036e9cf8b7db46bacf76357332261edd826aade496db5fbbeb
+  sha256: c55ce4543a214b24da36e24f01235762d74a4fb54b393536aa180ac7b1c9ec24
 
 build:
   merge_build_host: true  # [win]
