@@ -1,6 +1,5 @@
 {% set version = "4.1.1" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-ecospat
@@ -13,8 +12,7 @@ source:
   sha256: c55ce4543a214b24da36e24f01235762d74a4fb54b393536aa180ac7b1c9ec24
 
 build:
-  merge_build_host: true  # [win]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
