@@ -1,4 +1,4 @@
-{% set version = "4.1.1" %}
+{% set version = "4.1.2" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ecospat_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ecospat/ecospat_{{ version }}.tar.gz
-  sha256: c55ce4543a214b24da36e24f01235762d74a4fb54b393536aa180ac7b1c9ec24
+  sha256: e73fda50f1eda39c13b342726c3949368f2b5cf5e872ca040b258bb590f3bd2a
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
